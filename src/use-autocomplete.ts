@@ -273,20 +273,20 @@ export function useAutoComplete(
           }
 
           if (key === "ArrowDown") {
-            setFocusedValue(nextItem.value);
+            setFocusedValue(nextItem?.value);
             e.preventDefault();
             return;
           }
 
           if (key === "ArrowUp") {
-            setFocusedValue(prevItem.value);
+            setFocusedValue(prevItem?.value);
 
             e.preventDefault();
             return;
           }
 
           if (key === "Tab") {
-            setFocusedValue(nextItem.value);
+            setFocusedValue(nextItem?.value);
             e.preventDefault();
             return;
           }
